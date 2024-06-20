@@ -1,0 +1,33 @@
+using System;
+
+class Program
+{
+	static void Main()
+	{
+		Console.WriteLine("How many rows should the table have? ");
+		int n = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("How many columns should the table have? ");
+		int n = int.Parse(Console.ReadLine());
+
+			for (int i = 0; i <= m; i++)
+        	{
+				Console.Write(i+"\t|");
+        	}
+			Console.WriteLine();
+			for (int i = 0; i <= m; i++)
+        	{
+				Console.WriteLine("--------");
+        	}
+			Console.WriteLine();
+			for (int i = 1; i <= n; i++)
+        	{
+				Console.Write(i+"\t|");
+				for(int j = 1; j <= m; j++)
+				{
+					Console.Write(i*j+"\t|");
+				}
+				Console.WriteLine();
+        	}
+	}
+}
