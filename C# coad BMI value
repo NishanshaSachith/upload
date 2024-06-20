@@ -1,0 +1,44 @@
+using System;
+
+class Program
+{
+	static void Main()
+	{
+		Console.WriteLine("Enter  Weight (Kilogram) : ");
+		float X = float.Parse(Console.ReadLine());
+		
+        Console.WriteLine("Enter  Height (Meters) : ");
+		float Y = float.Parse(Console.ReadLine());
+		
+        float squareRoot = (float)Math.Sqrt(Y);
+
+        float Z = X / squareRoot;
+        Console.WriteLine("BMI Value : "+Z);
+
+        Console.WriteLine("Weight status is ");
+        if(18.5>Z)
+        { 
+            Console.WriteLine("Under weight");
+        }
+        else if(24.5>=Z)
+        {
+            Console.WriteLine("Normal Weight");
+        }
+        else if(29.9>=Z)
+        {
+            Console.WriteLine("Over Weight");
+        }
+        else if(34.9>=Z)
+        {
+            Console.WriteLine("Obesity class I");
+        }
+        else if(39.9>=Z)
+        {
+            Console.WriteLine("Obesity class II");
+        }
+        else if(40<=Z)
+        {
+            Console.WriteLine("Obesity class III");
+        }
+	}
+}
